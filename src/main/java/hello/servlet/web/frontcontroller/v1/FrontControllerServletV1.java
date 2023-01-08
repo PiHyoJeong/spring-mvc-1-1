@@ -27,8 +27,8 @@ public class FrontControllerServletV1 extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         System.out.println("run FrontControllerServletV1 service");
 
-        //https://localhost:8080/ront-controller/v1/members
-        String requestURI = request.getRequestURI(); //ront-controller/v1/members
+        //http://localhost:8080/ront-controller/v1/members
+        String requestURI = request.getRequestURI(); //front-controller/v1/members
 
         ControllerV1 controller = controllerMap.get(requestURI);
         if(controller == null) {

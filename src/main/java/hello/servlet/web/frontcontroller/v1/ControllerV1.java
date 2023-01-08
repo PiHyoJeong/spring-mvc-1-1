@@ -7,7 +7,5 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 public interface ControllerV1 {
-    default void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-
-    }
+    void process(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException;
 }
